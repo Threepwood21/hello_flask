@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from flask import Flask
 app = Flask(__name__)
 
@@ -16,4 +17,4 @@ def show_user_profile(username):
 
 
 if __name__ == "__main__":
-    app.run(port=80, host="0.0.0.0")
+    app.run(port=80, host="0.0.0.0", threaded=True)
