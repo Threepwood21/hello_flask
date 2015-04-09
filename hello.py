@@ -16,5 +16,4 @@ def show_user_profile(username):
 
 
 if __name__ == "__main__":
-    app.debug = True
-    app.run(port=100)
+    app.run(port=80, host="0.0.0.0")
